@@ -1,0 +1,17 @@
+@media(max-width:450px){
+       main form{
+           width: 90%;
+           flex-direction: column;
+           gap:40px;
+           justify-content: flex-start;
+           align-items:  center;
+       }
+
+       form .form-group{
+           width: 100%;
+       }
+
+       form .loan-details{
+        width: 100%;
+       }
+}

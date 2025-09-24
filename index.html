@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBank Loan App</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+
+    <header>
+                 <img src="logo.png" alt="" width="25">
+                  <b>iBank</b>
+       
+    </header>
+    <main>
+                <form class="loan-form">
+                       <div class="form-group">
+                                    <label class="rate-label">Interest rate: <b>20%</b> per annum</label>
+                                <label for="">
+                                    Loan Amount
+                                    <input type="number" min="100000" max="5000000" step="100000" required  class="loan-amount-input">
+                                </label>
+
+                                <label>
+                                        Duration
+                                        <select required class="duration-select">
+                                                <option value="">--</option>
+                                                <option value="3">3 months</option>
+                                                <option value="6">6 months</option>
+                                                <option value="9">9 months</option>
+                                                <option value="12">12 months</option>
+                                                <option value="15">15 months</option>
+                                                <option value="18">18 months</option>
+                                                <option value="21">21 months</option>
+                                                <option value="27">27 months</option>
+                                                <option value="30">30 months</option>
+                                        </select>
+                                </label>
+
+                                <span>
+                                        <button class="calculate-btn" type="submit">Calculate</button>
+                                        <button class="reset-btn" type="reset">Reset</button>
+                                </span>
+             </div>
+
+                      <div class="loan-details">
+                          <small>Loan Details</small>
+                          <p><span>Loan Amount:</span> <span>₦ <b class="loan-amount">0.0</b></span></p>
+                          <p><span>Duration:</span> <span><b class="loan-duration">0</b> months</span></p>
+                          <p><span>Rate:</span> <span><b class="loan-rate">0%</b> per annum</span></p>
+                          <p><span>Interest:</span> <span>₦ <b class="loan-interest">0.0</b></span></p>
+                          <p><span>Amount:</span> <span>₦ <b class="loan-payment">0.0</b></span></p>
+                          
+                          <button class="print-btn">Print Loan Details</button>
+                      </div>
+                </form>
+    </main>
+    <footer>
+         <p>&copy;l Copyright <span class="year"></span>. All rights reserved. Designed by Codeprof Academy</p>
+    </footer>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
